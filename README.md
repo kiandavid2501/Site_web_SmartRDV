@@ -83,7 +83,7 @@ POST /api/appointments
 
 ---
 
-## 📊 Fonctionnalités prévues
+## Fonctionnalités prévues
 
 * Création de compte utilisateur
 * Authentification
