@@ -1,0 +1,128 @@
+/* Navigation principale */
+.navbar {
+  background-color: white;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.navbar-container {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+}
+
+.navbar-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  cursor: pointer;
+}
+
+.logo-icon {
+  width: 2rem;
+  height: 2rem;
+  color: #2563eb;
+}
+
+.logo-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.logo-subtitle {
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+/* Actions */
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Boutons généraux */
+.navbar-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-weight: 500;
+}
+
+.button-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.button-text {
+  display: none;
+}
+
+/* Bouton notifications */
+.notification-button {
+  position: relative;
+  color: #4b5563;
+  background-color: transparent;
+}
+
+.notification-button:hover {
+  color: #2563eb;
+  background-color: #eff6ff;
+}
+
+.notification-badge {
+  position: absolute;
+  top: 0.25rem;
+  right: 0.25rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: #ef4444;
+  border-radius: 9999px;
+}
+
+/* Bouton profil */
+.profile-button {
+  color: #4b5563;
+  background-color: transparent;
+}
+
+.profile-button:hover {
+  color: #2563eb;
+  background-color: #eff6ff;
+}
+
+/* Bouton déconnexion */
+.logout-button {
+  padding: 0.5rem 1rem;
+  background-color: #fef2f2;
+  color: #dc2626;
+}
+
+.logout-button:hover {
+  background-color: #fee2e2;
+}
+
+.logout-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+/* Responsive - Affichage du texte sur écrans moyens et grands */
+@media (min-width: 768px) {
+  .button-text {
+    display: block;
+  }
+}

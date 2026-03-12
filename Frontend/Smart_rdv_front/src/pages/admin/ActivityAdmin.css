@@ -1,0 +1,208 @@
+.btn-back {
+  background: var(--admin-card-bg);
+  border: 1px solid var(--admin-card-border);
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  color: var(--admin-text);
+  margin-right: 1rem;
+}
+
+.btn-back:hover {
+  background: var(--admin-card-bg, #f8fafc);
+  opacity: 0.8;
+  transform: translateX(-3px);
+  border-color: var(--admin-primary);
+  color: var(--admin-primary);
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.activity-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.search-bar {
+  background: var(--admin-card-bg);
+  border: 1px solid var(--admin-card-border);
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: 300px;
+  color: var(--admin-text-muted);
+}
+
+.search-bar input {
+  background: transparent;
+  color: var(--admin-text);
+  border: none;
+  outline: none;
+  font-family: inherit;
+  font-size: 0.9rem;
+  width: 100%;
+}
+
+.btn-filter {
+  background: var(--admin-card-bg);
+  border: 1px solid var(--admin-card-border);
+  padding: 0 1.25rem;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  color: var(--admin-text);
+}
+
+.btn-filter:hover {
+  background: var(--admin-card-bg);
+  opacity: 0.8;
+  border-color: var(--admin-primary);
+}
+
+.activity-log-card {
+  background: var(--admin-card-bg);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--admin-card-border);
+  border-radius: 1.25rem;
+  box-shadow: var(--admin-shadow);
+  overflow: hidden;
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.activity-log-header {
+  padding: 1.5rem;
+  border-bottom: 1px solid var(--admin-card-border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.activity-log-header h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.date-picker-mock {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--admin-text-muted);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.full-activity-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.activity-row {
+  display: flex;
+  align-items: center;
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid var(--admin-card-border);
+  transition: background 0.2s;
+}
+
+.activity-row:hover {
+  background: rgba(79, 70, 229, 0.02);
+}
+
+.activity-icon-col {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1.25rem;
+  flex-shrink: 0;
+}
+
+.icon-blue { background: rgba(59, 130, 246, 0.1); color: #3b82f6; }
+.icon-green { background: rgba(16, 185, 129, 0.1); color: #10b981; }
+.icon-purple { background: rgba(139, 92, 246, 0.1); color: #8b5cf6; }
+.icon-orange { background: rgba(249, 115, 22, 0.1); color: #f97316; }
+
+
+
+
+
+
+.activity-info-col {
+  flex: 1;
+}
+
+.activity-info-col h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.activity-info-col p {
+  color: var(--admin-text-muted);
+  font-size: 0.9rem;
+}
+
+.activity-time-col {
+  margin: 0 2rem;
+  color: var(--admin-text-muted);
+  font-size: 0.85rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.btn-detail {
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--admin-card-border);
+  background: var(--admin-card-bg);
+  color: var(--admin-text);
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-detail:hover {
+  background: var(--admin-primary);
+  color: white;
+  border-color: var(--admin-primary);
+}
+
+.activity-footer {
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-load-more {
+  background: transparent;
+  border: 1px solid var(--admin-primary);
+  color: var(--admin-primary);
+  padding: 0.75rem 2rem;
+  border-radius: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-load-more:hover {
+  background: var(--admin-primary);
+  color: white;
+}
